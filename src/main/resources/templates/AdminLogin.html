@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Admin login</title>
+</head>
+<body>
+	<form th:action="@{/AdminLogin}" th:object="${admin}" method="post">
+		Username: <input type="text" th:field="*{username}"/>
+		<br/><br/>
+		Password: <input type="text" th:field="*{password}"/>
+		<br/><br/>
+		<input type="submit" value="submit"/>
+		<br/><br/>
+</form>
+</body>
+</html>

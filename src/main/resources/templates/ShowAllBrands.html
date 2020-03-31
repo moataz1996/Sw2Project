@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="windows-1256"/>
+<title>show all products</title>
+</head>
+<body>
+<table border="1">
+	<tr><th>Brand Name</th><th>Category</th></tr>
+	
+	<tr th:each="p : ${blist}">
+	<td th:text="${p.name}"></td>
+	<td th:text="${p.category}"></td>
+	</tr>
+</table>
+
+</body>
+</html>

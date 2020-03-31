@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="windows-1256"/>
+<title>show all products</title>
+</head>
+<body>
+<table border="1">
+	<tr><th>product ID</th><th>name</th><th>category</th><th>lowest price</th><th>highest price</th> </tr>
+	
+	<tr th:each="pro : ${prod}">
+	<td th:text="${pro.productID}"></td>
+	<td th:text="${pro.name}"></td>
+	<td th:text="${pro.category}"></td>
+	<td th:text="${pro.lowestprice}"></td>
+	<td th:text="${pro.heighesttprice}"></td>
+	</tr>
+</table>
+
+</body>
+</html>
